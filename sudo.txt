@@ -1,0 +1,34 @@
+material UI
+semantic-ui.com
+
+
+-----------Header-----------
+View highscores link to local storage of the highscores
+timer for each question
+----------body-------------
+main form
+page 1
+<h1>Coding quiz Challenge
+<p> small snippet of the quiz program
+<button> start quiz
+onClick of "start quiz" 
+pick random question from array
+<h1>write first question
+<button1> first answer
+<button2> second answer
+<button3> third answer
+<button4> fourth answer
+test of the button is the answer
+randomly populate the answers so they dont show up in the same order every time
+count down timer 
+when answer is clicked add time left to score,
+display if selection was correct or incorrect
+populate new question that has not already been asked
+restart the timer
+
+Once all the questions have been asked displayed 
+<h1> "Complete!"
+display final score
+<input> initals
+<button> submit
+onClick show highscores
