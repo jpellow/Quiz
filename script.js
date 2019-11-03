@@ -7,53 +7,53 @@ $(document).ready(function () {
 
     var questions = [
         {
-            question: "This is the first question",
-            answers: ["Q1answer1", "Q1answer2", "Q1answer3", "Q1answer4"],
-            correctAnswer: 0
-        },
-        {
-            question: "This is the second question",
-            answers: ["Q2answer1", "Q2answer2", "Q2answer3", "Q2answer4"],
+            question: "Inside which HTML element do we put the JavaScript?",
+            answers: ["scripting", "script", "javascript", "js"],
             correctAnswer: 1
         },
         {
-            question: "This is the third question",
-            answers: ["Q3answer1", "Q3answer2", "Q3answer3", "Q3answer4"],
+            question: "What is the syntax for creating a function in JavaScript",
+            answers: ["function = myFunction()", "function myFunction()", "function := myFunction()", "function : myFunction()"],
+            correctAnswer: 1
+        },
+        {
+            question: "How is the function called in JavaScript?",
+            answers: ["call myFunction();", "call function myFunction();", "myFunction();", "function myFunction();"],
             correctAnswer: 2
         },
         {
-            question: "This is the fourth question",
-            answers: ["Q4answer1", "Q4answer2", "Q4answer3", "Q4answer4"],
+            question: "What is the JavaScript syntax for printing values in Console?",
+            answers: ["console.log(5);", "console.print(5);", "print.console(5);", "print(5)"],
+            correctAnswer: 0
+        },
+        {
+            question: " How to initialize an array in JavaScript?",
+            answers: ["var arr= 1, 2, 3", "var arr= (1, 2, 3)", "var arr= {1, 2, 3}", "var arr= [1, 2, 3]"],
             correctAnswer: 3
         },
         {
-            question: "This is the fifth question",
-            answers: ["Q5answer1", "Q5answer2", "Q5answer3", "Q5answer4"],
-            correctAnswer: 0
+            question: "What is the method in JavaScript used to remove the whitespace at the beginning and end of any string ?",
+            answers: ["strip()", "trim()", "stripped()", "trimmed()"],
+            correctAnswer: 1
         },
         {
-            question: "This is the sixth question",
-            answers: ["Q6answer1", "Q6answer2", "Q6answer3", "Q6answer4"],
-            correctAnswer: 0
+            question: "Which of the following is an advantage of using JavaScript?",
+            answers: ["Increased interactivity", "Less server interaction", "Immediate feedback", "All of the above"],
+            correctAnswer: 3
         },
         {
-            question: "This is the seventh question",
-            answers: ["Q7answer1", "Q7answer2", "Q7answer3", "Q7answer4"],
-            correctAnswer: 0
+            question: "Which function of an Array object calls a function for each element in the array?",
+            answers: ["every()", "forEvery()", "forEach()", "each()"],
+            correctAnswer: 2
         },
         {
-            question: "This is the eighth question",
-            answers: ["Q8answer1", "Q8answer2", "Q8answer3", "Q8answer4"],
-            correctAnswer: 0
+            question: "What is the proper syntax to increase a variable by one",
+            answers: ["i+", "i++", "i+++", "i++++"],
+            correctAnswer: 1
         },
         {
-            question: "This is the nineth question",
-            answers: ["Q9answer1", "Q9answer2", "Q9answer3", "Q9answer4"],
-            correctAnswer: 0
-        },
-        {
-            question: "This is the tenth question",
-            answers: ["Q10answer1", "Q10answer2", "Q10answer3", "Q10answer4"],
+            question: "What is the first index of an array",
+            answers: ["0", "1", "2", "10"],
             correctAnswer: 0
         },
     ];
@@ -169,5 +169,12 @@ $(document).ready(function () {
       function storeScore(score, name){
           localStorage.setItem("score", score);
           localStorage.setItem("name", name);
+      }
+      $(".highscores").on("click", function(){
+        highscoreScreen();
+      });
+
+      function highscoreScreen(){
+
       }
 });
